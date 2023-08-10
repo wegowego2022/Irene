@@ -28,9 +28,6 @@
 //       createdAt: new Date(),
 //       updatedAt: new Date(),
 //       Status: 'Active',
-
-//       // 카카오 로그인으로 사용자를 생성할 때는 비밀번호가 필요하지 않으므로, 랜덤한 문자열을 생성하여 사용
-//       // 이후에 카카오 로그인 사용자가 다른 방식으로 로그인하려 할 때 문제를 방지하기 위함
 //     };
 
 //     const existingUser = await this.userService.findUserByUserId(user.userId);
@@ -40,7 +37,7 @@
 //       return done(null, existingUser);
 //     }
 
-//     // 사용자가 없는 경우, 새로운 사용자를 생
+//     // 사용자가 없는 경우, 새로운 사용자를 생성
 //     const newUser = await this.userService.createUser(user);
 //     return done(null, newUser);
 //   }
